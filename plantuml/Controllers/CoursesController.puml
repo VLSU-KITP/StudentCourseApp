@@ -1,0 +1,8 @@
+@startuml
+class CoursesController {
+    + CoursesController(context:ApplicationDbContext)
+    + <<async>> GetCourses() : Task<ActionResult<IEnumerable<Course>>>
+    + <<async>> PostCourse(course:Course) : Task<ActionResult<Course>>
+}
+ControllerBase <|-- CoursesController
+@enduml

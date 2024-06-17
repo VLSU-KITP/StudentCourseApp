@@ -1,0 +1,11 @@
+@startuml
+class ApplicationDbContext {
+    + ApplicationDbContext(options:DbContextOptions<ApplicationDbContext>)
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- ApplicationDbContext
+ApplicationDbContext --> "Students<Student>" "DbSet`1"
+ApplicationDbContext --> "Courses<Course>" "DbSet`1"
+ApplicationDbContext --> "Grades<Grade>" "DbSet`1"
+@enduml

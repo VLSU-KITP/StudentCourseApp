@@ -1,0 +1,8 @@
+@startuml
+class StudentsController {
+    + StudentsController(context:ApplicationDbContext)
+    + <<async>> GetStudents() : Task<ActionResult<IEnumerable<Student>>>
+    + <<async>> PostStudent(student:Student) : Task<ActionResult<Student>>
+}
+ControllerBase <|-- StudentsController
+@enduml

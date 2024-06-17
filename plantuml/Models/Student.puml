@@ -1,0 +1,21 @@
+@startuml
+class Student {
+    + Id : int <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + MiddleName : string <<get>> <<set>>
+    + Group : string <<get>> <<set>>
+}
+class Course {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+class Grade {
+    + Id : int <<get>> <<set>>
+    + StudentId : int <<get>> <<set>>
+    + CourseId : int <<get>> <<set>>
+    + Score : int <<get>> <<set>>
+}
+Grade --> "Student" Student
+Grade --> "Course" Course
+@enduml

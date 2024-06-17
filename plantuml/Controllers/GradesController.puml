@@ -1,0 +1,8 @@
+@startuml
+class GradesController {
+    + GradesController(context:ApplicationDbContext)
+    + <<async>> GetGrades() : Task<ActionResult<IEnumerable<Grade>>>
+    + <<async>> PostGrade(grade:Grade) : Task<ActionResult<Grade>>
+}
+ControllerBase <|-- GradesController
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+!include .\\Program.puml
+!include .\\Controllers\CoursesController.puml
+!include .\\Controllers\GradesController.puml
+!include .\\Controllers\StudentsController.puml
+!include .\\Data\ApplicationDbContext.puml
+!include .\\Models\Student.puml
+!include .\\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net8.0\StudentCourseApp.AssemblyInfo.puml
+!include .\\obj\Debug\net8.0\StudentCourseApp.GlobalUsings.g.puml
+!include .\\obj\Debug\net8.0\StudentCourseApp.MvcApplicationPartsAssemblyInfo.puml
+@enduml
